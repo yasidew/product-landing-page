@@ -1,20 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const header = document.querySelector('header') // select header
-    const changeColorButton = document.querySelector('#change-color-button') // select button
-
-    changeColorButton.addEventListener("click", function() {
-        const randomColor = getRandomColor(); // get random color from function
-        header.style.color = randomColor;
-    });
-
-
-    function getRandomColor(){ // function to get random color 
-        const letters = "0123456789ABCDEF";
-        let color = "#";
-        for(let i =0; i<6 ; i++){     // loop to get random color
-            color += letters[Math.floor(Math.random() * 16)];  // to get random color from letters 
-        }
-
-        return color;
+    const header = document.querySelector('header'); // Select the header element
+    const randomColor = getRandomColor(); // Generate a random color
+    header.style.color = randomColor; // Change the color of the header text
+  
+    function getRandomColor() {
+      const letters = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)]; // Get a random letter to create a color code
+      }
+      return color;
     }
-});
+  });
+  
