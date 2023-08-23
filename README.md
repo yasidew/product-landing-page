@@ -1,3 +1,3 @@
 # product-landing-page
 
-# This landing page consists of HTML and CSS files
+# This landing page consists of HTML, CSS and JavaScript files
